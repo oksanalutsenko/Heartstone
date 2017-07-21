@@ -1,0 +1,400 @@
+@import "colors.scss";
+@import "fonts.scss";
+/*Large Devices, Wide Screens*/
+@media only screen and (max-width:1200px) {
+	.welcome {
+		.registration_wrap {
+			margin-right: 35px;
+		}
+	}
+	.tournament {
+		min-height: 1350px;
+		position: relative;
+		.tournament_wrap {
+		    padding-right: 0;
+		    width: 89% !important;
+		}
+		#slider {
+	        height: 1315px;
+	        margin: 30px auto;
+	        padding-left: 72px;
+	        width: 100%;
+	        overflow: hidden;
+		}
+		h3 {
+			margin: 35px auto 0;
+			position: static;
+			width: 70%;
+		}
+		.content-block {
+			margin: 23px auto 10px !important;
+		}
+		.slick-next, .slick-prev {
+		    margin-top: 53px;
+		    position: absolute;
+		    right: 21%;
+		    margin-top: 74px;
+		    z-index: 2;
+		}
+	}
+	.info {
+		.join {
+			button {
+				width: 16%;
+			}
+		}
+	}
+	footer {
+		 .footer-wrap {
+		    margin: 30px auto;
+		    width: 93%;
+		}
+	}
+}
+
+/*Medium Devices, Desktops*/
+@media only screen and (max-width: 992px) {
+	header {
+		height: 72px;
+		h5 {
+		   margin: 28px auto;
+		   width: 14%;
+		}
+		.menu-left img {
+		    left: 30px;
+		    position: absolute;
+		    top: 22px;
+		}
+		.hidden-menu {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 71px;
+			a {
+				display: block;
+				height: 62px;
+				&:hover {
+					text-decoration: none;
+				}
+				img {
+					height: 55px;
+					margin: 3px 10px;
+					width: 55px;
+					opacity: .8;
+				}
+				p {
+					display: inline;
+					color: $main-color;
+					text-transform: uppercase;
+					padding-left: 7px;
+					font-family: "Lato-Regular";
+					font-size: 18px;
+					&:hover {
+						color: $accent-color;
+					}
+				}
+			}
+		}
+	}
+	.welcome {
+		min-height: 650px;
+		h2, h4 {
+			text-align: center;
+		}
+		.registration_wrap {
+		    left: 3%;
+		    margin: 0 auto;
+		    position: absolute;
+		}
+	}
+	.tournament {
+	    margin-top: -30px;
+	    .tournament_wrap {
+		    	h3 {
+		    		width: 100%;
+		    		background: url("../img/yellow-bg.png") no-repeat scroll 25px 0;
+		    	}
+	      }
+	    #slider {
+	    	padding-left: 50px;
+	    }
+	}
+	.news {
+		h4 {
+			font-size: 30px;
+		}
+		h3 {
+			font-size: 27px;
+			background: url(../img/red_bg.png) no-repeat;
+			background-size: calc(755px) auto;
+			position: absolute;
+			margin: 0 auto;
+			span {
+				font-size: 27px;
+			}
+		}
+		img {
+			display: block;
+			width: 90%;
+			position: absolute;
+			z-index: .5;
+		}
+		ol li {
+			font-size: 35px;
+		}
+	}
+	.info {
+		min-height: 470px;
+		.info_gamers {
+		    float: left;
+		    margin-bottom: 20px;
+		    width: 100%;
+		}
+		.info_sponsors {
+		    float: right;
+		    margin-bottom: 20px;
+		    width: 100%;
+		}
+		.join {
+		    background-color: #2d1e16;
+		    bottom: -105px;
+		    color: #fff;
+		    height: 105px;
+		    left: 0;
+		    padding: 25px 95px;
+		    position: absolute;
+		    width: 100%;
+		    button {
+		       width: 20%;
+		     }
+		}
+	}
+	footer {
+		.footer-wrap {
+			ul {
+			    text-align: center;
+			}
+		}
+	}
+}
+
+/*Small Devices, Tablets*/
+@media only screen and (max-width: 768px) {
+	.welcome {
+	    min-height: 720px;
+	}
+	.tournament {
+		.tournament_wrap {
+			h3 {
+				background: rgba(0, 0, 0, 0) url("../img/yellow-bg.png") no-repeat scroll 0 0 / contain ;
+				   display: block;
+				   margin: 20px auto;
+				   text-align: center;
+				   width: 100%;
+			}
+		}
+		 #slider {
+			padding-left: 0;
+			height: 1320px;
+		}
+		.tournament .slick-next, .tournament .slick-prev {
+		    margin-top: 58px;
+		    position: absolute;
+		    right: 21%;
+		    z-index: 2;
+		}
+		.content-block {
+			width: 110%;
+			.block-left {
+			    line-height: 25px;
+			    padding: 15px;
+			    width: 48%;
+			}
+			.block-center {
+				h5 {
+					font-size: 12px;
+				}
+			}
+		}
+		p {
+			font-size: 13px;
+		}
+	}
+	.news {
+		ol {
+			padding-left: 35px;
+			li {
+				font-size: 30px;
+			}
+		}
+		h3 {
+		    background: rgba(0, 0, 0, 0) url("../img/red_bg.png") no-repeat scroll 0 10px / contain ;
+		    font-size: 21px;
+		    margin: 1px auto;
+		    padding-bottom: 3px;
+		    width: 96%;
+		    	span {
+		    	    font-size: 22px;
+		     }
+		}
+	}
+	.info {
+		.join {
+			button {
+			    padding-left: 0;
+			    width: 28%;
+			    position: absolute;
+			    right: 5px;
+			    top: 34%;
+			    width: 28%;
+			}
+		}
+		.info_gamers button,.info_sponsors button {
+		    background-color: #ffc000;
+		    border: medium none;
+		    border-radius: 15px;
+		    font-family: "Lato-Regular";
+		    padding-right: 5px;
+		    position: absolute;
+		    right: 5px;
+		    top: 34%;
+		    width: 20%;
+		}
+	}
+}
+
+/*Extra Small Devices, Phones*/
+@media only screen and (max-width: 480px) {
+	.welcome {
+		.welcome-h h2 {
+		    font-family: "Lato-Black";
+		    font-size: 32px;
+		    margin-bottom: 30px;
+		    margin-top: 96px;
+		    text-transform: uppercase;
+		}
+	}
+	.tournament {
+		min-height: 1570px;
+		.tournament_wrap h3 {
+		    background: transparent url("../img/yellow-bg.png") no-repeat scroll 0 0 / contain ;
+		    font-size: 20px;
+		    margin: 13px auto;
+		    padding-left: 30px;
+		    padding-top: 7px;
+		    width: 109%;
+		}
+		.content-block {
+		    background: #2d1e16 none repeat scroll 0 0;
+		    display: block;
+		    height: 199px;
+		    .block-left {
+		        line-height: 22px;
+		        padding: 15px;
+		        width: 51%;
+		    }
+		    .block-center {
+		        border-left: 1px solid #eacda1;
+		        border-right: 1px solid #eacda1;
+		        height: 160px;
+		        line-height: 14px;
+		        padding: 10px;
+		        width: 49%;
+		        h5 {
+		            font-size: 10px;
+		        }
+		    }
+		    .block-right {
+		        display: none;
+		    }
+		} 
+		#slider {
+		    height: 1535px;
+		    padding-left: 0;
+		}
+	}	
+	.news {
+		h4 {
+			margin-left: 10px;
+			font-size: 27px;
+		}
+		ol li {
+		    font-size: 23px;
+		}
+		h3 {
+		    background: transparent url("../img/red_bg.png") no-repeat scroll 0 17px / contain ;
+		    font-size: 16px;
+		    margin: -21px auto;
+		    padding-bottom: 0;
+		    width: 96%;
+		    span {
+		        font-size: 16px;
+		    }
+		}
+	}
+	.info {
+		min-height: 700px;
+		.info-wrap {
+		    width: 98%;
+		    min-height: 485px;
+		}
+		.info_gamers, .info_sponsors {
+			min-height: 180px;
+			margin-bottom: 20px;
+		}
+		.info_gamers img, .info_sponsors img, .join img {
+		    left: 41%;
+		    position: absolute;
+		    top: 5px;
+		}
+		.info_gamers h6, .info_sponsors h6{
+		    font-size: 16px;
+		    left: 19%;
+		    position: absolute;
+		    text-align: center;
+		    top: 65px;
+		}
+		.info_gamers p, .info_sponsors p, .join p {
+		    font-size: 14px;
+		    position: absolute;
+		    top: 105px;
+		}
+		.info_gamers button, .info_sponsors button {
+		    position: absolute;
+		    right: 34%;
+		    top: 76%;
+		    width: 30%;
+		}
+		.join {
+			height: 180px;
+			button {
+			    padding-left: 0;
+			    position: absolute;
+			    right: 26%;
+			    top: 75%;
+			    width: 41%;
+			}
+			h6 {
+			    position: absolute;
+			    right: 18%;
+			    top: 35%;
+			}
+		}
+	}
+	footer {
+		ul {
+		    padding: 0;
+		}
+	}
+}
+
+/*Custom, iPhone Retina*/
+@media only screen and (max-width: 320px) {
+	
+}
+	
+
+
+
+
+
